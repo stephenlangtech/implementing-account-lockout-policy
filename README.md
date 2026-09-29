@@ -26,6 +26,10 @@ In this tutorial, we configure an Account Lockout Policy using Group Policy in a
 * Select:
   **Edit**
 
+  <img src="Screenshot 2026-09-27 101624.png" width="50%" height="50%">  
+
+  <img src="Screenshot 2026-09-27 101635.png" width="50%" height="50%">  
+
 ### 2. Configure the Account Lockout Threshold
 
 * Navigate to:
@@ -52,7 +56,9 @@ In this tutorial, we configure an Account Lockout Policy using Group Policy in a
 * Click:
   **OK**
 
-This setting determines how many unsuccessful login attempts are allowed before an Active Directory user account becomes locked.
+This setting determines how many unsuccessful login attempts are allowed before an Active Directory user account becomes locked.  
+
+  <img src="Screenshot 2026-09-27 101755.png" width="65%" height="65%">  
 
 ### 3. Configure the Account Lockout Duration
 
@@ -69,7 +75,9 @@ This setting determines how many unsuccessful login attempts are allowed before 
 * Click:
   **OK**
 
-The account will remain locked for 30 minutes before it can automatically become available again, assuming no other administrative action is taken.
+The account will remain locked for 30 minutes before it can automatically become available again, assuming no other administrative action is taken.  
+
+  <img src="Screenshot 2026-09-27 101801.png" width="80%" height="80%">  
 
 ### 4. Force a Group Policy Update
 
@@ -81,6 +89,8 @@ gpupdate /force
 ```
 
 * This forces the client to retrieve and process the latest applicable Group Policy settings.
+
+  <img src="Screenshot 2026-09-27 101210.png" width="65%" height="65%">  
 
 ### 5. Verify the Account Lockout Policy
 
